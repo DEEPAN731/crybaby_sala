@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cry Baby Gallery</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Cry Baby</h1>
+
+  <button id="gridBtn" style="display:none;" onclick="askQuestion('grid')">Grid View</button>
+  <button id="flipBtn" style="display:none;" onclick="askQuestion('flip')">Flipbook View</button>
+
+  <div id="gallery" class="image-grid"></div>
+
+  <div id="flipbook" class="flipbook" style="display: none;">
+    <img id="flipImage" src="" alt="Flipbook Image" />
+    <div class="controls">
+      <button onclick="nextFlipImage()">Next</button>
+      <button onclick="exitFlipbook()">Exit</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
